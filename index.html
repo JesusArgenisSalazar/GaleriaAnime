@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+	 <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap" rel="stylesheet">
+
+    
+     
+    <script src="https://kit.fontawesome.com/44346a6bdb.js" crossorigin="anonymous"></script>
+
+  	<style type="text/css">
+	
+
+		   
+		   *{
+
+		   	box-sizing: border-box;
+		   }
+           
+
+           .header__ul-desktop{  
+
+           	
+            
+             visibility: hidden;
+           }
+
+		   body,p,div{
+               
+               padding: 0px;
+               border: 0px;
+               margin: 0px;
+               
+
+		   }
+
+		   body{
+
+		   	background-color: #000;
+		   	font-family: 'Urbanist', sans-serif;
+		   	color: white;
+		   }
+
+
+           
+           .conten{
+
+           	display: flex;
+           	flex-direction: column;
+           	height: 100vh;
+
+           }
+
+           .header{
+
+           	  height: 80px;
+           	  width: 100%;
+           	  padding-top: 30px;
+           	  background-image: radial-gradient(circle at 50% -20.71%, #ff7f49 0, #ff6f46 16.67%, #fe5942 33.33%, #f23c3c 50%, #e50b37 66.67%, #db0036 83.33%, #d20038 100%);
+           	 position: relative;
+
+
+           }
+
+            .header__ul-phone{
+
+          	position: absolute;
+          	background: #d20038;
+          	list-style: none;
+          	width: 100%;
+          	height: 100vh;
+          	top: -900px;
+          	left: 0;
+          	padding-top: 20px;
+          	transition: transform;
+          	transition-duration: 2s;
+          	z-index: -1;
+
+
+          }
+
+          .header__nav:hover > .header__ul-phone{
+
+               
+                transform: translateY(945px); 
+           }
+
+           
+
+           .header__nav{
+
+           	  
+           	   margin-top: -5px;
+           	   height: 40px;
+           	   width: 100%;
+           	    
+
+           }
+
+           .header__nav a{
+
+           	 margin-right: 10px;
+             font-weight: bold;
+             color: white;
+             text-decoration: none;
+           }
+
+           
+         
+
+          .header__nav li{
+
+          	  padding: 10px;
+
+
+          }
+      
+          
+
+          .header__boton{
+
+          	 margin-left: 90%;
+          }
+
+          .header__ul-phone i{
+
+             margin-right: 10px;
+
+
+          }
+
+
+
+           .main{
+             
+             
+           	 flex-grow: 2;
+           	 flex-basis: 100px;
+           	 padding: 10px 5px 5px 5px;
+           	 
+           }
+
+           .main h1{
+
+           	 position: relative;
+           	 z-index: -3;
+           }
+
+           .aside{
+
+           	  flex-basis: 200px;
+           	  flex-grow: 1;
+              height: 100%;
+           	  padding: 0px 10px 10px 10px;
+
+           }
+
+           .aside__content{
+
+           	 background: #111;
+           	 margin-top: 30px;
+           	 padding-left: 10px;
+             padding-bottom: 30px;
+
+           }
+
+           .aside__content a{
+
+           	  display: block;
+           	  padding: 5px 0px 5px 0px;
+           	  text-decoration: none;
+           	  color: red;
+           }
+
+           .aside__content a:hover{
+
+           	   color: white;
+           }
+
+           .footer{
+
+           	 
+           	 background: #d20038;
+           	 display: flex;
+           	 flex-wrap: wrap;
+
+           }
+
+           .footer h3{
+
+           	 color: white;
+           	  font: Arial;
+
+           } 
+
+
+           .footer__follow{
+
+           	  min-width: 100px;
+           	  flex-grow: 1;
+           	  flex-shrink: 1;
+           }
+
+           .footer__follow_content{
+
+           	 text-align: left;
+           	 width: 225px;
+           	 margin:auto;
+           	 padding-bottom: 10px;
+
+
+           }
+           
+
+           .footer__follow a{
+
+
+           	  text-decoration: none;
+           	  color: #000;
+           	  font-size: 0.9em;
+           	  font-weight: bold;
+           }
+
+           .footer__follow a:hover{
+
+
+           	  color: white;
+           }
+
+
+          
+
+           .footer__contact{
+
+
+              min-width: 100px;
+           	  flex-grow: 1;
+           	  flex-shrink: 1;
+
+
+
+           }
+
+           .footer__contact_content{
+
+           	   text-align: left;
+           	   width: 225px;
+           	   margin:auto;
+           	   padding-bottom: 10px;
+           	   
+
+           }
+
+           .footer__contact p{
+
+           	  color: #000;
+           	  font-weight: bold;
+           	  padding: 1px 0px 1px 0px;
+           	  
+
+           }
+
+
+           .footer__pie-footer{
+
+           	   font-family: Arial;
+           	   color: white;
+           	   width: 100%;
+           }
+
+           .footer__pie-footer p{
+
+           	   
+           	   background-color: #a20038;
+           	   flex-grow: 1;
+           	   padding-left: 20px;
+           }
+
+
+           .footer i{
+
+           	color: white;
+           	width: 25px;
+           }
+
+           
+
+
+          /*------estilo del contenido del main--------*/
+
+
+           .container{
+
+               display: grid;
+               grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+               grid-template-rows: repeat(5,200px);
+               grid-auto-rows: 200px;
+               grid-auto-flow: row;
+               grid-gap: 15px;
+               position: relative;
+               z-index: -2;
+
+               
+           }
+
+
+           .container__Item{
+
+           	  width: 100%;
+           	  height: 100%;
+           }
+
+
+           .container__Item img{
+
+
+           	    width: 100%;
+           	    height:75%;
+           	    object-fit: cover;
+
+           }
+
+           .container__Item b{
+               
+              position: relative;
+              height: 15%;
+           	  background-color: #a10027;
+           	  padding: 5px 30px 5px 5px;
+           	  border-radius: 4px;
+           	  margin-top: -20px;
+           	  margin-left: -5px;
+           	  z-index: 1;
+
+           }
+
+
+
+            @media screen and (min-width: 700px){
+
+               
+                /*------reinicio de elementos-------*/
+                .header__nav:hover > .header__ul-phone{
+
+               
+                  transform: none;
+                   
+
+                }
+
+                .header__boton{
+
+                	visibility: hidden;
+
+
+                }
+
+                
+
+                /*------------------------------------*/
+                
+                .conten{
+
+                	display: grid;
+                	grid-template-rows: 80px repeat(3,max-content) 1fr;
+                	grid-template-columns: repeat(3,1fr);
+
+
+                }
+
+
+                .header{
+
+                	grid-column: 1/4;
+                	grid-row: 1/2;
+                }
+
+                .main{
+
+                	grid-column: 1/3;
+                	grid-row: 2/5;
+                    padding: 0px 20px 10px 20px;
+
+
+                }
+
+
+
+                .footer{
+
+                	grid-column: 1/4;
+                	grid-row: 5/6;
+                	display: flex;
+
+                	
+
+
+                }
+
+                .aside{
+
+                	 grid-row: 2/5;
+                	 grid-column: 3/6;
+                	 padding: 50px 10px 10px 0px;
+                	
+                	 
+
+
+                }
+
+                
+
+                .header__ul-desktop{
+                     
+                     
+                	 visibility: visible;
+                	 list-style: none;
+                	 width: 100%;
+                	 margin-top: -10px;
+                	 margin-left: -30px;
+                	 padding-left: 0px 10px 10px 0px;
+
+
+
+                	
+                }
+
+                .header__ul-desktop i{
+
+                   margin-right: 10px;
+
+               }
+
+                .header__ul-desktop li{
+
+                	display: inline-block;
+                	padding-right: 0 10px 10px 10px;
+                	box-sizing: border-box;
+                	border: 2px solid transparent;
+
+                	
+                }
+
+                .header__ul-desktop li:hover{
+
+                      
+                      border-top: 2px solid #000; 
+                      background: #c00;    
+
+                }
+
+
+
+
+
+            }
+        
+         
+	</style>
+        
+       
+
+
+</head>
+<body>
+
+
+<div class="conten">
+<header class="header">
+
+	   <nav class="header__nav" >
+        
+       <div class="header__boton fas fa-bars"></div>
+
+	   <ul class="header__ul-phone">
+	   	 <li><i class="fas fa-home"></i><a href="#">Home</a></li>
+	   	 <li><i class="fas fa-search-dollar"></i><a href="#">Mas buscadas</a><li>
+	   	 <li><i class="fas fa-box-open"></i><a href="#">Sorteos</a></li>
+	   	 <li><i class="fas fa-users"></i><a href="#">Nosotros</a></li>	
+	   </ul>
+
+
+	   <ul class="header__ul-desktop">
+	   	 <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+	   	 <li><a href="#"><i class="fas fa-search-dollar"></i>Mas buscadas</a><li>
+	   	 <li><a href="#"><i class="fas fa-box-open"></i>Sorteos</a></li>
+	   	 <li><a href="#"><i class="fas fa-users"></i>Nosotros</a></li>	
+	   </ul>
+
+
+
+	</nav>
+</header>
+<main class="main">
+	 
+
+	 <h1>Las mejores imagenes al mejor precio</h1>
+	
+  <div class="container">
+
+
+	<div class="container__Item"><img src="https://fondosmil.com/fondo/4605.jpg"><b>Tokyo Ghoul.png 1$</b></div>
+
+	<div class="container__Item"><img src="https://fondosmil.com/fondo/4595.jpg"><b>Sasuke.png 1$</b></div>
+
+	<div class="container__Item"><img src="https://media.cdnandroid.com/item_images/999745/imagen-anime-wallpaper-master-0big.jpg"><b>Boku no Hero.png 1$</b></div>
+
+	<div class="container__Item"><img src="https://images3.alphacoders.com/716/thumb-350-716428.png"><b>okyo ghoul.png 1$</b></div>
+
+	<div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfJxSgknmY5n6mv4JTVX6DmGT67FZFmyaSBQ&usqp=CAU"><b>tokyo ghoul.png 1$</b></div>
+
+	<div class="container__Item"><img src="https://lh3.googleusercontent.com/GWwW-qdP5N9YFJl266yFTUl8Rqso2wXOsjLamjJHnXI4XYM_Flf-SMvZ0dnAYdCwLQ=h1024-no-tmp_anime_wallpaper_apk.jpg"><b>mejores anime.png 1$</b></div>
+    
+    <div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Up610b689XcZSz36P1zb7WImeYfnoZxZNQ&usqp=CAU"><b>mejor anime.png 1$</b></div>
+
+    <div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacmPRxFEonLqWi2FA54EMP1uKjvtxjX_kqA&usqp=CAU"><b>tokyo ghoul.png 1$</b></div>
+
+
+    <div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLzS82fQM-QRysRxzGqFIOa89sk9DmuM9Yeg&usqp=CAU"><b>tokyo ghoul.png 1$</b></div>
+
+    <div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6rgwwfAfrcBEABEvea5TCEsHHZfNvCnLUdQ&usqp=CAU"><b>Amnesia 1$</b></div>
+
+    <div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqd0WCt8IONqm0wzsOBuG68E-HmPFNVMmIpQ&usqp=CAU"><b>Hatsune Miku 1$</b></div>
+
+    <div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchizZfTCjKOG1iRzGxP31T1DMUKMNUnnICA&usqp=CAU"><b>Sasuke.png 1$</b></div>
+
+    <div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwzJhb1Es5kYasMriUz0Sa5CcUYWUa23iGhw&usqp=CAU"><b>Hatsune Miku 2$</b></div>
+	
+	
+	
+  </div>
+	
+</main>
+<aside class="aside">
+	  
+
+
+	<div class="aside__content">
+
+	 	<h3>Tenemos mas para ti</h3>
+	 	    
+
+         <a href="#">imagenes de paisajes</a>
+         <a href="#">imagenes de animales</a>
+         <a href="#">imagenes urbanas</a>
+         <a href="#">imagenes artisticas</a>
+
+</div>
+	
+</aside>
+<footer class="footer">
+
+    <div class="footer__follow">
+
+    	<div class="footer__follow_content">
+    	  
+    	 <h3>Siguenos<h3> 
+    	 <p><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/jesus-salazar-a57b32180/" target="_black">LinkedIn</a></p> 
+
+    	 <p><i class="fab fa-facebook-f" ></i><a href="https://mbasic.facebook.com/jesusargenis.salazar.1?ref_component=mbasic_home_header&ref_page=%2Fwap%2Fhome.php&refid=7" target="_black">Facebook</a></p> 
+
+    	 <p><i class="fab fa-telegram-plane"></i><a href="">Telegram</a></p> 
+          
+        </div>    
+    </div>
+
+    <div class="footer__contact">
+
+        <div class="footer__contact_content">
+    	<h3>Contactanos</h3>
+    	<p><i class="fas fa-mobile-alt" ></i>+58 04248058292</p>
+    	<p><i class="fas fa-mail-bulk"></i>argenissalazar1111@gmail.com</p>
+    	</div>
+
+    </div>
+
+    <div  class="footer__pie-footer">
+	<p>©Jesus Salazar 2021 Todos los derechos reservados</p>
+	</div>
+
+</footer>
+
+</div>
+
+
+</body>
+</html>
