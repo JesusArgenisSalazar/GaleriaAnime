@@ -52,7 +52,6 @@
 
            	display: flex;
            	flex-direction: column;
-           	height: 100vh;
 
            }
 
@@ -74,21 +73,17 @@
           	list-style: none;
           	width: 100%;
           	height: 100vh;
-          	top: -900px;
           	left: 0;
+            top: -100vh;
           	padding-top: 20px;
-          	transition: transform;
-          	transition-duration: 2s;
+          	transition: top;
+          	transition-duration: 1s;
           	z-index: -1;
 
 
           }
 
-          .header__nav:hover > .header__ul-phone{
-
-               
-                transform: translateY(945px); 
-           }
+         
 
            
 
@@ -300,7 +295,6 @@
                grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
                grid-template-rows: repeat(5,200px);
                grid-auto-rows: 200px;
-               grid-auto-flow: row;
                grid-gap: 15px;
                position: relative;
                z-index: -2;
@@ -366,8 +360,9 @@
                 .conten{
 
                 	display: grid;
-                	grid-template-rows: 80px repeat(3,max-content) 1fr;
+                	grid-template-rows: 80px repeat(3,minmax(1fr)) 160px;
                 	grid-template-columns: repeat(3,1fr);
+                  height: 100vh;
 
 
                 }
@@ -503,35 +498,32 @@
   <div class="container">
 
 
-	<div class="container__Item"><img src="https://fondosmil.com/fondo/4605.jpg"><b>Tokyo Ghoul.png 1$</b></div>
+	<div class="container__Item"><img src="images/img1.png"><b>Tokyo Ghoul.png 1$</b></div>
 
-	<div class="container__Item"><img src="https://fondosmil.com/fondo/4595.jpg"><b>Sasuke.png 1$</b></div>
+	<div class="container__Item"><img src="images/img2.png"><b>Sasuke.png 1$</b></div>
 
-	<div class="container__Item"><img src="https://media.cdnandroid.com/item_images/999745/imagen-anime-wallpaper-master-0big.jpg"><b>Boku no Hero.png 1$</b></div>
+	<div class="container__Item"><img src="images/img3.jpg"><b>Boku no Hero.png 1$</b></div>
 
-	<div class="container__Item"><img src="https://images3.alphacoders.com/716/thumb-350-716428.png"><b>okyo ghoul.png 1$</b></div>
+	<div class="container__Item"><img src="images/img4.png"><b>okyo ghoul.png 1$</b></div>
 
-	<div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfJxSgknmY5n6mv4JTVX6DmGT67FZFmyaSBQ&usqp=CAU"><b>tokyo ghoul.png 1$</b></div>
+	<div class="container__Item"><img src="images/img5.jpg"><b>tokyo ghoul.png 1$</b></div>
 
-	<div class="container__Item"><img src="https://lh3.googleusercontent.com/GWwW-qdP5N9YFJl266yFTUl8Rqso2wXOsjLamjJHnXI4XYM_Flf-SMvZ0dnAYdCwLQ=h1024-no-tmp_anime_wallpaper_apk.jpg"><b>mejores anime.png 1$</b></div>
+	<div class="container__Item"><img src="images/img6.jpg"><b>mejores anime.png 1$</b></div>
     
-    <div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Up610b689XcZSz36P1zb7WImeYfnoZxZNQ&usqp=CAU"><b>mejor anime.png 1$</b></div>
+    <div class="container__Item"><img src="images/img7.jpg"><b>mejor anime.png 1$</b></div>
 
-    <div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacmPRxFEonLqWi2FA54EMP1uKjvtxjX_kqA&usqp=CAU"><b>tokyo ghoul.png 1$</b></div>
+    <div class="container__Item"><img src="images/img8.jpg"><b>tokyo ghoul.png 1$</b></div>
 
 
-    <div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLzS82fQM-QRysRxzGqFIOa89sk9DmuM9Yeg&usqp=CAU"><b>tokyo ghoul.png 1$</b></div>
+    <div class="container__Item"><img src="images/img9.jpg"><b>tokyo ghoul.png 1$</b></div>
 
-    <div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6rgwwfAfrcBEABEvea5TCEsHHZfNvCnLUdQ&usqp=CAU"><b>Amnesia 1$</b></div>
+    <div class="container__Item"><img src="images/img10.jpg"><b>Amnesia 1$</b></div>
 
-    <div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqd0WCt8IONqm0wzsOBuG68E-HmPFNVMmIpQ&usqp=CAU"><b>Hatsune Miku 1$</b></div>
+    <div class="container__Item"><img src="images/img11.jpg"><b>Hatsune Miku 1$</b></div>
 
-    <div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchizZfTCjKOG1iRzGxP31T1DMUKMNUnnICA&usqp=CAU"><b>Sasuke.png 1$</b></div>
+    <div class="container__Item"><img src="images/img12.jpg"><b>Sasuke.png 1$</b></div>
 
-    <div class="container__Item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwzJhb1Es5kYasMriUz0Sa5CcUYWUa23iGhw&usqp=CAU"><b>Hatsune Miku 2$</b></div>
-	
-	
-	
+    
   </div>
 	
 </main>
@@ -585,7 +577,7 @@
 </footer>
 
 </div>
-
-
+ 
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
